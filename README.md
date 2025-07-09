@@ -1,7 +1,5 @@
 # recipe_finder-whats-in-the-fridge-
 
-# recipe_finder-whats-in-the-fridge-
-
 # 🧑‍🍳 What's in the Fridge?
 
 **What's in the Fridge?** is a smart recipe finder that helps you cook delicious meals using ingredients you already have. Just enter the items in your fridge, and the app will suggest a variety of recipes using the Spoonacular API.
