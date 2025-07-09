@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}Home - What's in my Fridge{% endblock %}
+{% block content %}
+    <div class="home">
+        <h1>🍴 What's in my Fridge?</h1>
+        <p>Discover recipes from the ingredients you already have!</p>
+        <a class="button" href="{{ url_for('search') }}">Continue</a>
+    </div>
+{% endblock %}

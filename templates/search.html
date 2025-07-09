@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Find Recipes - What's in my Fridge{% endblock %}
+{% block content %}
+    <h2>Find Recipes</h2>
+    <form method="post">
+        <label>Ingredients (comma-separated):</label>
+        <input type="text" name="ingredients" required>
+        <label>Dietary Restrictions:</label>
+        <select name="diet">
+            <option>None</option>
+            <option>Vegetarian</option>
+            <option>Vegan</option>
+            <option>Gluten-Free</option>
+            <option>Ketogenic</option>
+        </select>
+        <button type="submit">Find Recipes</button>
+    </form>
+    {% if recipes %}
+        <h3>Recipes Found:</h3>
+        <ul class="recipe-list">
+            {% for recipe in recipes %}
+                <li>
+                    <img src="{{ recipe.image }}" alt="{{ recipe.title }}">
+                    <div>
+                        <h4>{{ recipe.title }}</h4>
+                        <p>Ready in {{ recipe.readyInMinutes }} minutes | Servings: {{ recipe.servings }}</p>
+                        <a href="{{ recipe.sourceUrl }}" target="_blank">View Recipe</a>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endblock %}
