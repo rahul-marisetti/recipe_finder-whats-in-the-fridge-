@@ -29,3 +29,4 @@ streamlit run app.py
 This app uses the free version of the Spoonacular API, which allows a limited number of requests per day. To ensure smooth usage, avoid excessive or repeated searches in a short time span.
 
 For extended usage, consider generating your own API key via Spoonacular's official site("https://spoonacular.com/food-api").
+The web-app is available at https://whats-in-the-fridge-h0z0.onrender.com
